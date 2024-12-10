@@ -6,8 +6,9 @@ const AttendanceLayout = () => {
   const AttendanceStudent = lazy(() => import("../Queries/AttendanceStudent"));
   const Attendance = lazy(() => import("../Queries/Attendance"));
   const { user } = useContext(UserContext);
+
   return (
-    <>
+    <div className="bg-gradient-to-b from-teal-700 to-blue-800 min-h-screen p-4">
       {user.userType === "student" ? (
         <Suspense fallback={<Loading />}>
           <AttendanceStudent />
@@ -17,7 +18,7 @@ const AttendanceLayout = () => {
           <Attendance />
         </Suspense>
       )}
-    </>
+    </div>
   );
 };
 

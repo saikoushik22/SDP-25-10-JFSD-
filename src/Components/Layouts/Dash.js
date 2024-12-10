@@ -113,7 +113,7 @@ const Dash = () => {
 
   return (
     <main className="self-center">
-      <h2 className="m-6 font-spectral mx-auto text-center text-6xl font-bold dark:text-slate-400">
+      <h2 className="m-6 font-spectral mx-auto text-center text-6xl font-bold text-teal-500">
         Assignment Submission and Grading System
       </h2>
       <div className="grid grid-cols-1 place-content-center gap-3 px-1 py-4 lg:grid-cols-2 lg:gap-4 lg:px-8 xl:grid-cols-3">
@@ -121,12 +121,12 @@ const Dash = () => {
           <Link
             key={index}
             to={item.link}
-            className="flex gap-2 rounded-lg bg-violet-300 p-6 text-base hover:bg-violet-400/90 dark:bg-violet-950/80 dark:hover:bg-violet-950 dark:hover:text-slate-300 duration-200 lg:text-lg"
+            className="flex gap-2 rounded-lg bg-indigo-500 p-6 text-base hover:bg-indigo-600/90 dark:bg-indigo-900/80 dark:hover:bg-indigo-800 dark:hover:text-yellow-300 duration-200 lg:text-lg"
           >
             {item.icon}
-            <div className="font-semibold">
+            <div className="font-semibold text-white">
               {item.title}
-              <p className="text-sm font-normal lg:text-base">
+              <p className="text-sm font-normal lg:text-base text-gray-300">
                 {item.description}
               </p>
             </div>

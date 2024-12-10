@@ -1,19 +1,16 @@
 import React from "react";
 import { BsConeStriped } from "react-icons/bs";
+
 const Soon = () => {
   return (
-    <section className="w-full whitespace-break-spaces rounded-md bg-slate-400/50 p-4 text-justify hover:bg-slate-200 dark:bg-slate-600/50 dark:hover:bg-slate-800 lg:w-2/3 ">
-      <div className="flex items-center gap-2  text-2xl">
-        <BsConeStriped className="text-5xl text-orange-600" />
-        <h1 className="inline font-semibold">Under Construction</h1>
+    <section className="w-full bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-md p-6 text-justify shadow-lg hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-600 transition-colors">
+      <div className="flex items-center gap-3 text-2xl">
+        <BsConeStriped className="text-5xl text-yellow-400" />
+        <h1 className="font-semibold text-3xl">Under Construction</h1>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero
-        sunt odio deserunt amet laudantium nam officiis corrupti animi adipisci.
-        Ex expedita officiis, nam explicabo iste dolore ab. Fugit harum
-        cupiditate rem repudiandae aut dolorum culpa pariatur voluptas
-        consectetur maxime ullam possimus atque, iste optio repellendus natus a?
-        Aliquid dolore nesciunt. quis dignissimos sint dolorem itaque porro?
+      <p className="mt-4 text-lg">
+        We are currently working on this page. Stay tuned for updates. 
+        We appreciate your patience as we bring this feature to life.
       </p>
     </section>
   );
